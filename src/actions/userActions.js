@@ -1,12 +1,4 @@
-import axios from "axios";
-import {
-  LOADING_COUNTRY,
-  COUNTRIES_FETCHED,
-  ADD_USER,
-  GET_ERRORS,
-  EDIT_USER,
-  DELETE_USER,
-} from "./types";
+import { COUNTRIES_FETCHED, ADD_USER, EDIT_USER, DELETE_USER } from "./types";
 
 export const fetchCountries = () => async (dispatch) => {
   const countries = [

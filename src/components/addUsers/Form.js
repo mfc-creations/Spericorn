@@ -87,6 +87,11 @@ const Form = (props) => {
         ...prevState,
         phone: "Should be 10 digits",
       }));
+    } else if (Object.keys(photo).length === 0) {
+      setErrors((prevState) => ({
+        ...prevState,
+        photo: "Select a photo",
+      }));
     } else {
       const newUser = {
         firstName,
@@ -144,6 +149,9 @@ const Form = (props) => {
             })
           }
         />
+        {errors.photo && (
+          <span className="invalid-feedback">{errors.photo}</span>
+        )}
       </div>
       <form>
         <table>

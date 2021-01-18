@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import { deleteUser } from "../../actions/userActions";
-import "./AddUser.css";
 import Form from "./Form";
 import UserTable from "./UserTable";
+import "./AddUser.css";
 
 const AddUser = (props) => {
   return (
